@@ -182,7 +182,8 @@ public class ComparePropertyValueEvaluatorTest extends BaseSpringTest
 
 #### Jackson
 
-ACS 6 has newer [Jackson libraries](https://github.com/FasterXML) - 2.8.11(.1).
+ACS 6.0 has newer [Jackson libraries](https://github.com/FasterXML) - 2.9.5.
 
-The old code (Jackson 1.x) will not compile against the new version. The migration mostly needs package names changed in imports section. There might be some behaviour changes as there is no one-to-one matching configuration for the *ObjectMapper*.  
-The behaviour is expected to change even more with upgrades to 2.9+.
+The old code (Jackson 1.x) will not compile against the new version.  
+The migration mostly needs package names changed in imports section. There might be some behaviour changes as there is no one-to-one matching configuration for the *ObjectMapper* and some of the configurations have been deprecated in 2.9+.  
+For more details on the 2.9 features, see this blog post - https://medium.com/@cowtowncoder/jackson-2-9-features-b2a19029e9ff
